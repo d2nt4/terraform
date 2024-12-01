@@ -14,15 +14,15 @@ resource "aws_instance" "mi_ec2" {
   instance_type = "t2.micro"               # Tipo de instancia 
 
 # Asociar el grupo de seguridad
-  vpc_security_group_ids = [aws_security_group.mi_grupo_seguridad.id]
+  vpc_security_group_ids = [aws_security_group.mi_grupo_seguro.id]
 
   tags = {
     Name = "MiInstanciaEC2"
   }
 }
 
-resource "aws_security_group" "mi_grupo_seguridad" {
-  name        = "mi-grupo-seguridad"
+resource "aws_security_group" "mi_grupo_seguro" {
+  name        = "mi-grupo-seguro"
   description = "Permitir trafico SSH"
 
   # Reglas de entrada
@@ -42,6 +42,6 @@ resource "aws_security_group" "mi_grupo_seguridad" {
   }
 
   tags = {
-    Name = "mi-grupo-seguridad"
+    Name = "mi-grupo-seguro"
   }
 }
