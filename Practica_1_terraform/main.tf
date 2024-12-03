@@ -11,7 +11,8 @@ variable "key_name" {
 # Crear una instancia EC2
 resource "aws_instance" "mi_ec2" {
   ami           = "ami-0c02fb55956c7d316"  # AMI de Amazon Linux 2
-  instance_type = "t2.micro"               # Tipo de instancia 
+  instance_type = "t2.micro"               # Tipo de instancia
+  key_name      =  var.key_name            # Par de claves para acceder a la instancia
 
 # Asociar el grupo de seguridad
   vpc_security_group_ids = [aws_security_group.mi_grupo_seguro.id]
