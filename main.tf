@@ -13,3 +13,8 @@ provider "aws" {
   token = var.token
   region = var.region
 }
+
+module "ec2" {
+  source = "./modules/ec2"
+  parKey = var.keyPar
+}
