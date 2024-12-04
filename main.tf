@@ -14,7 +14,14 @@ provider "aws" {
   region = var.region
 }
 
-module "ec2" {
+/*module "ec2" {
   source = "./modules/ec2"
   parKey = var.keyPar
+}*/
+
+module "rds" {
+  source = "./modules/rds"
+  db_name = var.db_name
+  db_username = var.db_username
+  db_password = var.db_password
 }
