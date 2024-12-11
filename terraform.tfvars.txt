@@ -1,0 +1,11 @@
+# Security Credentials
+accessKey = "<incluir tu accessKey>"
+secretKey = "<incluir tu secretKey>"
+keyPar = "<incluir tu keyPar>"
+token = "<incluir tu token>"
+region = "us-east-1"
+
+# Database
+db_name     = "<nombre de la base de datos>"
+db_username = "<usuario de la base de datos>"
+db_password = "<password de la base de datos>"
