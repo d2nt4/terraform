@@ -12,7 +12,7 @@ El proyecto está organizado modularmente para garantizar la reutilización y la
 
 ## Estructura del Proyecto
 
-
+```plaintext
 modules/
 │
 ├── ec2/
@@ -34,6 +34,7 @@ modules/
 ├── main.tf               # Configuración principal de Terraform.
 ├── terraform.tfvars.txt  # Variables específicas del entorno.
 ├── variables.tf          # Variables globales del proyecto.
+```
 ## Requisitos
 ### Pre-requisitos:
 
